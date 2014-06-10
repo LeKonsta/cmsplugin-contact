@@ -35,7 +35,7 @@ class ContactPlugin(CMSPluginBase):
     # (New in django-cms 3.0c, all plugins are cached through django cache)
 
     fieldsets = (
-        (None, {
+        (_('Form settings'), {
             'fields': ('form_name', 'form_layout', 'site_email', 'thanks', 'submit'),
         }),
         (_('Spam Protection'), {
